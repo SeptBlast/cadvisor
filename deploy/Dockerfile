@@ -1,4 +1,4 @@
-FROM alpine:3.15 AS build
+FROM alpine:3.15.4 AS build
 
 RUN apk --no-cache add libc6-compat device-mapper findutils zfs build-base linux-headers python3 bash git wget cmake pkgconfig ndctl-dev && \
     apk --no-cache add thin-provisioning-tools --repository http://dl-3.alpinelinux.org/alpine/edge/main/ && \
